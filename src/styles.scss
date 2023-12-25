@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'CascadiaCode';
+    src: url(/assets/fonts/CascadiaCode.ttf);
+    display: swap;
+  }
+  
+  * {
+    font-family: 'CascadiaCode', monospace;
+  }
+  
+  html,
+  body,
+  body > div:first-child,
+  div#__next,
+  div#__next > div {
+    height: 100%;
+    overflow: auto;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #20111a;
+    color: #958b83;
+}

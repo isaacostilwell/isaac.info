@@ -1,0 +1,31 @@
+.layout {
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+    width: 12.5vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -20vw; /* Initially off-screen */
+    transition: left 0.3s; /* Smooth transition for the sidebar */
+    z-index: 100; /* Ensures the sidebar is above the main view */
+}
+
+.sidebar.active {
+    left: 0; /* Bring onto screen when active */
+}
+
+.view {
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 200; /* Above everything */
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.sidebar {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace; /* Terminal-like font */
+    padding: 1vw;
+    height: 100vh;
+    font-size: 1vw;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Style for nested lists */
+.sidebar ul ul {
+    padding-left: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px; /* Adjust for more spacing */
+}
+
+/* Style for first nested list item */
+.sidebar ul ul li:first-child::before {
+    content: '├─';
+    position: relative;
+    left: -10px; /* Adjust as necessary */
+}
+
+/* Style for last nested list item */
+.sidebar ul ul li:last-child::before {
+    content: '└─';
+    position: relative;
+    left: -10px; /* Adjust as necessary */
+}

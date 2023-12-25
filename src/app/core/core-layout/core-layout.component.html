@@ -1,0 +1,11 @@
+<div class="layout">
+  <button class="menu-button" (click)="toggleSidebar()">☰</button>
+
+  <div class="sidebar" [class.active]="isSidebarVisible">
+    <app-core-sidebar></app-core-sidebar>
+  </div>
+
+  <div class="view">
+    <app-core-view></app-core-view>
+  </div>
+</div>
