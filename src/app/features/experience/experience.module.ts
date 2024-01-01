@@ -5,6 +5,8 @@ import { ExperienceRoutingModule } from './experience-routing.module';
 import { ExperienceViewComponent } from './experience-view/experience-view.component';
 import { ExperienceSidebarComponent } from './experience-sidebar/experience-sidebar.component';
 import { ExperienceShellComponent } from './experience-shell/experience-shell.component';
+import { SharedShellModule } from '../../shared/shared-shell/shared-shell.module';
+import { SharedModule } from '../../shared/shared.module';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ExperienceShellComponent } from './experience-shell/experience-shell.co
   ],
   imports: [
     CommonModule,
-    ExperienceRoutingModule
+    ExperienceRoutingModule,
+    SharedShellModule,
+    SharedModule,
   ]
 })
 export class ExperienceModule { }

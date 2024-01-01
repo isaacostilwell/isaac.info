@@ -31,8 +31,24 @@
   }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #20111a;
-    color: #958b83;
+  margin: 0;
+  padding: 0;
+  background-color: #11090e;
+  color: #958b83;
+}
+
+h1 {
+  color: #958b83;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 48px;
+  padding-top: 2.22vh;
+  margin-bottom: 1.4vh;
+  text-align: center;
+}
+
+h2 {
+  color: #958b83;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 36px;
+  margin-bottom: 1.4vh;
 }

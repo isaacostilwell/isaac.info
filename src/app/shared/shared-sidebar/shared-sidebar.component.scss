@@ -1,10 +1,11 @@
 .sidebar {
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: #edb75a;
     font-family: 'Courier New', monospace; /* Terminal-like font */
-    padding: 1vw;
-    height: 100vh;
-    font-size: 1vw;
+    padding-left: 1vw;
+    padding-top: 1.75vh;
+    height: 75vh;
+    font-size: 25px;
 }
 
 .sidebar ul {
@@ -13,7 +14,7 @@
 }
 
 .sidebar a {
-    color: white;
+    color: #958b83;
     text-decoration: none;
 }
 
@@ -21,25 +22,22 @@
     text-decoration: underline;
 }
 
-/* Style for nested lists */
 .sidebar ul ul {
-    padding-left: 20px;
+    padding-left: 0.78vw;
 }
 
 .sidebar ul li {
-    margin-bottom: 10px; /* Adjust for more spacing */
+    margin-bottom: 0.7vh;
 }
 
-/* Style for first nested list item */
 .sidebar ul ul li:first-child::before {
     content: '├─';
     position: relative;
-    left: -10px; /* Adjust as necessary */
+    left: -0.4vw;
 }
 
-/* Style for last nested list item */
 .sidebar ul ul li:last-child::before {
     content: '└─';
     position: relative;
-    left: -10px; /* Adjust as necessary */
+    left: -0.4vw;
 }

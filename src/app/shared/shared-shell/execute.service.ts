@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
 })
 export class ExecuteService {
   validCommands: Record<string, string[]> = {
-    'cd': ['homepage', 'education', 'experience', 'projects', 'resume', 'help'], // Add ~ and .. later
+    'cd': ['homepage', 'about', 'education', 'experience', 'projects', 'resume', 'help'],
+    'help': [],
     'instagram': [],
     'linkedin': [],
   };
@@ -26,6 +27,9 @@ export class ExecuteService {
           case 'homepage':
             this.router.navigate(['/homepage']);
             return null;
+          case 'about':
+            this.router.navigate(['/about']);
+            return null;
           case 'education':
             this.router.navigate(['/education']);
             return null;
@@ -39,10 +43,12 @@ export class ExecuteService {
             this.router.navigate(['/resume']);
             return null;
           case 'help':
-            return `Valid pages: 'homepage', 'education', 'experience', 'projects', 'resume'.`
+            return `Valid pages: 'homepage', 'about', 'education', 'experience', 'projects', 'resume'.`
           default:
             return this.pageNotExist;
         }
+      } else if (cmd === 'instagram') {
+        return `Valid commands: help, cd, instagram, linkedin`;
       } else if (cmd === 'instagram') {
         window.open('https://instagr.am/icarus', '_blank');
         return null;

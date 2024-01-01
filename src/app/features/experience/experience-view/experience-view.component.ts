@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './experience-view.component.scss'
 })
 export class ExperienceViewComponent {
+  showTerminal = false;
 
+  toggleTerminal(): void {
+    this.showTerminal = !this.showTerminal;
+  }
 }

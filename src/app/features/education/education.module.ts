@@ -5,6 +5,8 @@ import { EducationRoutingModule } from './education-routing.module';
 import { EducationViewComponent } from './education-view/education-view.component';
 import { EducationSidebarComponent } from './education-sidebar/education-sidebar.component';
 import { EducationShellComponent } from './education-shell/education-shell.component';
+import { SharedShellModule } from '../../shared/shared-shell/shared-shell.module';
+import { SharedModule } from '../../shared/shared.module';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { EducationShellComponent } from './education-shell/education-shell.compo
   ],
   imports: [
     CommonModule,
-    EducationRoutingModule
+    EducationRoutingModule,
+    SharedShellModule,
+    SharedModule
   ]
 })
 export class EducationModule { }

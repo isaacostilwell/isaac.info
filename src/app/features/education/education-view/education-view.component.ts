@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './education-view.component.scss'
 })
 export class EducationViewComponent {
+  showTerminal = false;
 
+  toggleTerminal(): void {
+    this.showTerminal = !this.showTerminal;
+  }
 }

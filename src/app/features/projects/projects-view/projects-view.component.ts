@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './projects-view.component.scss'
 })
 export class ProjectsViewComponent {
-
+  showTerminal = false;
+  
+  toggleTerminal(): void {
+    this.showTerminal = !this.showTerminal;
+  }
 }

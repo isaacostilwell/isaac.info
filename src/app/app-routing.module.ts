@@ -7,6 +7,7 @@ const routes: Routes = [
     path: '', component: CoreLayoutComponent, children: [
       { path: '', redirectTo: 'homepage', pathMatch: 'full'},
       { path: 'homepage', loadChildren: () => import('./features/homepage/homepage.module').then(m => m.HomepageModule) },
+      { path: 'about', loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule) },
       { path: 'education', loadChildren: () => import('./features/education/education.module').then(m => m.EducationModule) },
       { path: 'experience', loadChildren: () => import('./features/experience/experience.module').then(m => m.ExperienceModule) },
       { path: 'projects', loadChildren: () => import('./features/projects/projects.module').then(m => m.ProjectsModule) },

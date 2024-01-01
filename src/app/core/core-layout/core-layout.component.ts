@@ -9,6 +9,12 @@ export class CoreLayoutComponent {
   isSidebarVisible: boolean = false;
 
   toggleSidebar(): void {
+    const menu = document.getElementById("menu");
+    if (menu == null) {
+      console.log(`id 'menu' not found`);
+      return;
+    }
+    menu.classList.toggle("openmenu");
     this.isSidebarVisible = !this.isSidebarVisible;
   }
 }

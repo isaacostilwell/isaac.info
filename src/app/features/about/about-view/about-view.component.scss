@@ -1,4 +1,4 @@
-.projects {
+.about-page {
     background-color: #11090e;
     height: 92svh;
     display: flex;
@@ -17,7 +17,7 @@
 .info-container, .shell-container {
     transition: transform 0.5s;
     width: 33.33vw;
-    height: 75vh;
+    height: 50vh;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
 
 .info-container {
     transform: translateX(0vw);
-    max-height: 85%;
+    max-height: 65%;
     overflow: auto;
 }
 
